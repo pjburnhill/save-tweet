@@ -24,3 +24,9 @@ You can load this extension to Chrome as unpacked:
 This extension makes use of the chrome.debugger API to capture screenshots of tweets. Please be aware that using debugging capabilities on websites can pose security risks, especially if misused or if the extension is granted these privileges on malicious sites. Always be cautious and understand the implications of using debugger features in extensions. By using this extension, you do so at your own risk.
 
 I, PJ, am not responsible for any damages, issues, or security breaches that may arise from using this extension. Ensure you trust the sites you're debugging and always keep your software up to date.
+
+## Todo
+
+- Options for
+  - [ ] Selecting elements to remove before capture
+  - [ ] Scale factor
