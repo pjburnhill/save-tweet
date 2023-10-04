@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Save Tweet",
+  "version": "1.2.3",
+  "description": "Captures a tweet using Chrome debugger.",
+  "permissions": ["tabs", "debugger", "activeTab", "scripting", "downloads"],
+  "host_permissions": ["http://twitter.com/*", "https://twitter.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/save-tweet-icon-16.png",
+      "24": "icons/save-tweet-icon-24.png",
+      "32": "icons/save-tweet-icon-32.png",
+      "48": "icons/save-tweet-icon-48.png",
+      "128": "icons/save-tweet-icon-128.png",
+      "256": "icons/save-tweet-icon-256.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

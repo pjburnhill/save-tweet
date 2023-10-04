@@ -1,0 +1,21 @@
+#btn_saveTweet {
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: rgb(29, 155, 240);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+#btn_saveTweet:hover {
+    background-color: rgb(26, 145, 228);
+}
+
+#btn_saveTweet:mouseout {
+    background-color: rgb(29, 155, 240);
+}
