@@ -5,12 +5,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
-chrome.action.onClicked.addListener((tab) => {
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ["content.js"],
-  });
-});
 
 function captureScreenshot(tabId, rect, callback) {
   chrome.tabs.get(tabId, function (tab) {
