@@ -1,0 +1,38 @@
+
+Privacy Policy for "Save Tweet" Chrome Extension
+
+Introduction:
+This Privacy Policy outlines how the "Save Tweet" Chrome Extension handles user data and ensures user privacy. 
+We are committed to protecting your privacy and handling your data in an open and transparent manner.
+
+What Data We Collect:
+The "Save Tweet" Chrome Extension does not collect any personal data from its users. 
+The extension operates solely on the client side, and therefore, no data is transmitted over the internet or to any servers or third parties.
+
+How We Use the Data:
+Since the extension does not collect any data, there is no data to use, share, or store. 
+The sole purpose of the extension is to capture screenshots of tweets from Twitter and allow users to download them.
+
+Permissions Used by the Extension:
+The extension requires certain permissions to function properly:
+- tabs: To interact with browser tabs.
+- debugger: To capture screenshots.
+- activeTab: To gain temporary access to the current tab.
+- downloads: To download the captured screenshots.
+- host_permissions: To operate on Twitter pages.
+
+Third-Party Access:
+The "Save Tweet" Chrome Extension does not provide any data to third parties. There are no third-party integrations within the extension.
+
+User Rights:
+Users have the right to uninstall the extension at any time. Since the extension does not collect or store any data, there is no data to be deleted upon uninstallation.
+
+Security:
+The extension's functionality is limited to the client side, ensuring that there is no risk of data transmission or storage. 
+As no data is transmitted over the internet, there's no need for encryption, but we encourage users to always download extensions, including ours, from trusted sources like the Chrome Web Store.
+
+Changes to This Policy:
+Any changes to this Privacy Policy will be communicated to users through the Chrome Web Store listing or other official channels.
+
+Contact Us:
+For any queries regarding this Privacy Policy, please contact us at support.savetweet@proton.me.

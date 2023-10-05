@@ -25,6 +25,8 @@ This extension makes use of the chrome.debugger API to capture screenshots of tw
 
 I, PJ, am not responsible for any damages, issues, or security breaches that may arise from using this extension. Ensure you trust the sites you're debugging and always keep your software up to date.
 
+See the [Privacy Policy](privacy_policy.txt) for details of data collection (spoiler: none!).
+
 ## Todo
 
 - Options for
