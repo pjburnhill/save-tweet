@@ -18,9 +18,43 @@ function createCaptureButton(article) {
   return captureButton;
 }
 
+function removeElements(container) {
+  // Remove undesired elements
+
+  // Remove followers / repost
+  var followers = container.querySelectorAll('.r-ttdzmv');
+  followers[0].remove();
+
+  // Remove menu
+  var menus = container.querySelectorAll('.r-1jkjb');
+  menus.forEach(function (menu) {
+    menu.remove();
+  });
+
+  // Remove hidden replies
+  var hiddenReplies = container.querySelectorAll('[aria-label="Hidden replies"]');
+  hiddenReplies.forEach(function (reply) {
+    reply.remove();
+  });
+
+  // Remove bottom border
+  var element = container.querySelector('.r-qklmqi');
+  element.classList.remove('r-qklmqi');
+
+  return container;
+}
+
 function handleButtonClick(article) {
   return function () {
     console.log('Handling button click');
+    
+    // Add extra padding around article
+    article.style.padding = '16px 16px 6px 16px';
+
+    var container = article;
+    container = removeElements(container);
+
+    /* OLD SCALING / CLEANING CODE
 
     var body = document.body;
     article.style.padding = '16px 16px 6px 16px';
@@ -56,6 +90,8 @@ function handleButtonClick(article) {
     container.style.transform = `scale(${scaleFactor})`;
     container.style.transformOrigin = 'top left';
 
+    */ // OLD SCALING / CLEANING CODE
+
     var rect = container.getBoundingClientRect();
 
     console.log(rect);
@@ -68,7 +104,7 @@ function handleButtonClick(article) {
       chrome.runtime.sendMessage({ action: 'capture', rect: rect }, function (response) {
         if (response && response.status === 'captured') {
           // Captured, now reload
-          window.location.reload();
+          //window.location.reload();
         }
       });
     }, 200);

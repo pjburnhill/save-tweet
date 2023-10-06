@@ -14,7 +14,7 @@ function captureScreenshot(tabId, rect, callback) {
         .replace(/\W/g, "_") + // Replace all non-alphanumeric characters with underscores
       ".png";
 
-    let scaleFactor = 1; // Adjust this value as needed. 2 means 2x the current resolution.
+    let scaleFactor = 0.75; // Adjust this value as needed. 2 means 2x the current resolution.
 
     chrome.debugger.attach({ tabId: tabId }, "1.0", function () {
       chrome.debugger.sendCommand(
