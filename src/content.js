@@ -1,4 +1,4 @@
-console.log('Setting up the observer...');
+console.log('[Save Tweet]: Waiting for tweets...');
 
 function generateUniqueId(prefix = '') {
   return prefix + Math.random().toString(36).substr(2, 9);
@@ -57,7 +57,7 @@ function amendElements(container) {
 
 function handleButtonClick(article) {
   return function () {
-    console.log('Handling button click');
+    console.log('[Save Tweet]: Cleaning and saving tweet.');
 
     // Add extra padding around article
     article.style.padding = '16px 16px 6px 16px';
@@ -103,7 +103,7 @@ var observer = new MutationObserver(function (mutations) {
     !article.parentNode.querySelector('[data-article-id="' + article.id + '"]')
   ) {
     console.log(
-      "Found the first article element with tabindex='-1' and inserting the capture button...",
+      "[Save Tweet]: Found twitter article, inserting 'save tweet'' button...",
     );
     var captureButton = createCaptureButton(article);
     article.insertAdjacentElement('afterend', captureButton);
