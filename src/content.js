@@ -77,7 +77,8 @@ function handleButtonClick(article) {
         { action: 'capture', rect: rect },
         function (response) {
           if (response && response.status === 'captured') {
-            // Captured, now reload
+            // Captured
+            console.log('[Save Tweet]: Tweet captured.');
             //window.location.reload();
           }
         },
