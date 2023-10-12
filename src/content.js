@@ -104,7 +104,7 @@ var observer = new MutationObserver(function (mutations) {
     !article.parentNode.querySelector('[data-article-id="' + article.id + '"]')
   ) {
     console.log(
-      "[Save Tweet]: Found twitter article, inserting 'save tweet'' button...",
+      "[Save Tweet]: Found twitter article, inserting 'save tweet' button...",
     );
     var captureButton = createCaptureButton(article);
     article.insertAdjacentElement('afterend', captureButton);
