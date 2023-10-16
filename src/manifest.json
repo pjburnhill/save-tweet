@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Save Tweet",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Captures a tweet using Chrome debugger.",
   "permissions": ["tabs", "debugger", "activeTab", "downloads"],
   "host_permissions": ["http://twitter.com/*", "https://twitter.com/*"],
