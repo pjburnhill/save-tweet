@@ -49,8 +49,16 @@ function amendElements(container) {
   });
 
   // Remove bottom border
-  var element = container.querySelector('.r-qklmqi');
-  element.classList.remove('r-qklmqi');
+  var bottomBorderEl = container.querySelector('.r-qklmqi');
+  if (bottomBorderEl) {
+    bottomBorderEl.classList.remove('r-qklmqi');
+  }
+
+  // Remove 'Who can reply?'
+  var whoCanReplyEl = container.querySelector('.r-1ifxtd0');
+  if (whoCanReplyEl) {
+    whoCanReplyEl.remove();
+  }
 
   return container;
 }
@@ -65,7 +73,9 @@ function handleButtonClick(article) {
     var container = article;
     container = amendElements(container);
 
+    // Get element bounding rectangle and adjust by window scroll amount
     var rect = container.getBoundingClientRect();
+    rect.y += window.scrollY;
 
     if (rect.width === 0 || rect.height === 0) {
       console.error('Cannot capture screenshot: Article dimensions are zero.');
