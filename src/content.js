@@ -26,7 +26,7 @@ function amendElements(container) {
   followers[0].remove();
 
   // Get the menu element
-  var menu = container.querySelector('.r-1jkjb');
+  var menu = container.querySelector('.r-1kkk96v');
 
   // Remove all child elements from menu
   while (menu.firstChild) {

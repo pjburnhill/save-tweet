@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Save Tweet",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Captures a tweet using Chrome debugger.",
   "permissions": ["tabs", "debugger", "activeTab", "downloads"],
-  "host_permissions": ["http://twitter.com/*", "https://twitter.com/*"],
+  "host_permissions": ["http://x.com/*", "https://x.com/*"],
   "background": {
     "service_worker": "background.js"
   },
@@ -20,7 +20,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+      "matches": ["http://x.com/*", "https://x.com/*"],
       "js": ["content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"

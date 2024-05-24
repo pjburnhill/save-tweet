@@ -32,3 +32,8 @@ See the [Privacy Policy](privacy_policy.txt) for details of data collection (spo
 - Options for
   - [ ] Selecting elements to remove before capture
   - [ ] Scale factor
+
+
+## Changelog
+
+v1.2.8 - Amended domain from twitter to x. Fixed tween menu class definition. Button styling.
